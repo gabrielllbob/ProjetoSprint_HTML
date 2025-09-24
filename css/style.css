@@ -29,7 +29,7 @@ hr {
     border-width: 0.4vh;
 }
 
-section {
+.section__index__1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -37,11 +37,16 @@ section {
     padding: 0 7%;
 }
 
-section p {
+.section__index__1 p {
     padding: 0.7% 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1rem;
+}
+
+.section__lancamento__1 {
+    text-align: center;
+    background-color: black;
 }
 
 footer {
