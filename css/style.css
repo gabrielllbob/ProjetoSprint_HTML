@@ -4,7 +4,7 @@ header {
 }
 
 header img {
-    width: 9vw;
+    width: 8vw;
     height: auto;
 }
 
@@ -19,7 +19,7 @@ nav a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 0 3%;
 }
 
@@ -47,6 +47,46 @@ hr {
 .section__lancamento__1 {
     text-align: center;
     background-color: black;
+}
+
+.section__lancamento__2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section__lancamento__2__carros {
+    display: flex;
+    justify-content: center;
+}
+
+.section__lancamento__2__carro {
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1%;
+}
+
+.section__lancamento__2__checkbox {
+    color: #1351d8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section__lancamento__2__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__lancamento__2 button {
+    width: 9%;
+    margin: 0.7% auto;
+    padding: 0.5% 0;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #1351d8;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 footer {
