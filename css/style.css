@@ -50,6 +50,7 @@ hr {
 }
 
 .section__lancamento__2 {
+    margin: 0.5% 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -61,25 +62,40 @@ hr {
 }
 
 .section__lancamento__2__carro {
-    width: 14%;
     display: flex;
     flex-direction: column;
+    width: 14%;
     margin: 0 1%;
 }
 
 .section__lancamento__2__checkbox {
-    color: #1351d8;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.section__lancamento__2__info {
     display: flex;
     justify-content: space-between;
 }
 
+.section__lancamento__2__checkbox img {
+    width: 1vw;
+    height: 2vh;
+    position: relative;
+    top: 50%;
+    left: 5%;
+}
+
+.section__lancamento__2__info {
+    padding: 0 1%;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__lancamento__2__info label {
+    color: #1351d8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .section__lancamento__2 button {
     width: 9%;
-    margin: 0.7% auto;
+    margin: 1.5% auto 0.4% auto;
     padding: 0.5% 0;
     border-radius: 10px;
     border-style: none;
@@ -87,6 +103,13 @@ hr {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
+}
+
+.section__lancamento__2__carro input {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 footer {
