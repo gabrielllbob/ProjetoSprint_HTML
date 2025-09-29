@@ -1,7 +1,5 @@
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -16,7 +14,7 @@ main {
 
 header {
     display: flex;
-    margin: 1%;
+    margin: 0.5% 0 0 0.5%;
 }
 
 header img {
@@ -40,6 +38,7 @@ nav a {
 }
 
 hr {
+    width: 99%;
     color: whitesmoke;
     border-style: solid;
     border-width: 0.4vh;
@@ -61,8 +60,24 @@ hr {
 }
 
 .section__lancamento__1 {
-    text-align: center;
     background-color: black;
+    width: 100%;
+    height: 60vw;
+    max-height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section__lancamento__1 iframe {
+    width: 80%;
+    height: 100%;
+    border: 0;
+    position: static;
+    display: block;
 }
 
 .section__lancamento__2 {
@@ -80,7 +95,8 @@ hr {
 .section__lancamento__2__carro {
     display: flex;
     flex-direction: column;
-    width: 14%;
+    width: 25%;
+    justify-content: space-around;
     margin: 0 1%;
 }
 
@@ -90,11 +106,10 @@ hr {
 }
 
 .section__lancamento__2__checkbox img {
-    width: 1vw;
+    max-width: 100%;
     height: 2vh;
     position: relative;
     top: 50%;
-    left: 5%;
 }
 
 .section__lancamento__2__info {
@@ -102,6 +117,8 @@ hr {
     margin-left: 1%;
     display: flex;
     flex-direction: column;
+    width: 80%;
+    font-size: 1rem;
 }
 
 .section__lancamento__2__info label {
@@ -110,8 +127,8 @@ hr {
 }
 
 .section__lancamento__2 button {
-    width: 9%;
-    margin: 1.5% auto 0.4% auto;
+    width: 13%;
+    margin: 3% auto 0.4% auto;
     padding: 0.5% 0;
     border-radius: 10px;
     border-style: none;
@@ -119,6 +136,7 @@ hr {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
+    font-size: 1.5vh;
 }
 
 .section__lancamento__2__carro input {
@@ -131,6 +149,7 @@ hr {
 .section__contato__1 {
     display: flex;
     justify-content: center;
+    padding-top: 9vh;
 }
 
 .section__contato__1 h4 {
@@ -144,7 +163,7 @@ hr {
 }
 
 .section__contato__1 input {
-    width: 13vw;
+    width: 20vw;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 11px;
     padding: 3%;
@@ -160,7 +179,7 @@ hr {
 }
 
 .section__contato__1 select {
-    width: 14.1vw;
+    width: 21.5vw;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 11px;
     padding: 3%;
@@ -173,7 +192,7 @@ hr {
 }
 
 .section__contato__1 textarea {
-    width: 13.1vw;
+    width: 20vw;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 11px;
     padding: 3%;
@@ -201,7 +220,8 @@ hr {
 footer {
     background-color: #1b357e;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0.5% 1%;
 }
 
 footer img {
@@ -212,31 +232,165 @@ footer img {
 .footer__redes {
     display: flex;
     justify-content: flex-start;
-    width: 33vw;
-    padding: 1% 0;
-    margin-left: 1%;
+    width: 33%;
     color: white;
 }
 
-.footer__redes h4 {
-    margin: auto 1%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
+.footer__redes img {
+    width: 2vw;
+    height: auto;
 }
 
-.footer__redes img {
-    width: 1.5vw;
-    height: auto;
-    padding: 1% 0.1%;
-
+.footer__copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    width: 33%;
+    margin: auto 0;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 .footer__logo {
-    padding: 1%;
-    margin-right: 2%;
+    width: 33%;
+    text-align: right;
 }
 
 footer a {
     margin-top: 1%;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+    justify-content: center;
+}
+
+.menu-icon span {
+    height: 4px;
+    width: 100%;
+    background: #1351d8;
+    margin: 4px 0;
+    border-radius: 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+@media (max-width: 900px) {
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+    header img {
+        width: 13vw;
+        height: auto;
+    }
+    nav {
+        width: auto;
+        margin: 0;
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .menu-icon {
+        margin: 20% 25% 0 0;
+        text-align: left;
+        display: flex;
+        position: static;
+        margin-left: auto;
+        z-index: 2;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 150px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        border-radius: 20px;
+        z-index: 1;
+        padding: 13px 20px 13px 7px;
+        text-align: left;
+    }
+    .menu a {
+        margin-top: 7%;
+    }
+    nav input[type="checkbox"]:checked ~ .menu {
+        display: flex;
+    }
+    nav {
+        position: relative;
+    }
+
+    .section__lancamento__2__carro {
+        width: 28%;
+        justify-content: space-around;
+    }
+
+    .section__lancamento__2 button {
+        width: 22%;
+        padding: 1% 0;
+    }
+
+    .section__contato__1 {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .section__contato__1 img {
+        width: 50vw;
+        height: auto;
+    }
+
+    .section__contato__1 input {
+        width: 50vw;
+    }
+
+    .section__contato__1 select {
+        width: 54vw;
+    }
+
+    .section__contato__1 textarea {
+        width: 50vw;
+    }
+
+    .footer__redes img {
+        width: 3vw;
+        height: auto;
+    }
+
+    .footer__logo img {
+        width: 33%;
+        text-align: right;
+    }
+}
+
+@media (max-width: 700px) {
+    .section__lancamento__2__carro {
+        width: 33%;
+    }
+    
+    .section__lancamento__2__carros {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .section__lancamento__2 button {
+        width: 33%;
+        padding: 1% 0;
+        margin: 7% auto 3% auto;
+    }
 }

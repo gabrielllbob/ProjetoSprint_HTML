@@ -5,26 +5,34 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lançamento</title>
+    <title>Home</title>
 </head>
 <body>
     <header>
         <img src="img/logo-ford-256.png" alt="Logo Ford">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="lancamento.html">Lançamento</a>
-            <a href="contato.html">Contato</a>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="lancamento.html">Lançamento</a>
+                <a href="contato.html">Contato</a>
+            </div>
         </nav>
     </header>
     <hr>
     <main>
         <section class="section__lancamento__1">
-            <iframe width="854" height="480" src="https://www.youtube.com/embed/vQsryuNmsL0" title="Ford Ranger 2022 | Gerações" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="937" height="414" src="https://www.youtube.com/embed/vQsryuNmsL0" title="Ford Ranger 2022 | Gerações" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
         <section class="section__lancamento__2">
             <div class="section__lancamento__2__carros">
                 <div class="section__lancamento__2__carro">
-                    <img src="img/xls 2.2 diesel.jpg" alt="xls 2.2 diesel">
+                    <img src="img/XL Cabine.jpg" alt="XL Cabine">
                     <div class="section__lancamento__2__checkbox">
                         <input type="checkbox" name="carros" id="carro1">
                         <div class="section__lancamento__2__info">
@@ -46,7 +54,7 @@
                     </div>    
                 </div>
                 <div class="section__lancamento__2__carro">
-                    <img src="img/xls 2.2 diesel.jpg" alt="xls 2.2 diesel">
+                    <img src="img/storm.jpg" alt="storm">
                     <div class="section__lancamento__2__checkbox">
                         <input type="checkbox" name="carros" id="carro3">
                         <div class="section__lancamento__2__info">
@@ -57,17 +65,21 @@
                     </div>    
                 </div>
             </div>
-            <button>Comprar Carros</button>
+            <button>Comparar Carros</button>
         </section>
     </main>
     <footer>
         <div class="footer__redes">
-            <h4>Redes Sociais</h4>
             <a href="https://www.facebook.com/FordBrasil/"><img src="img/facebook-50.png" alt="Logo Facebook"></a>
             <a href="https://www.youtube.com/@fordbrasil"><img src="img/youtube-squared-50.png" alt="Logo Youtube"></a>
             <a href="https://www.instagram.com/fordbrasil/"><img src="img/instagram-logo-50.png" alt="Logo Instagram"></a>
         </div> 
-        <img class="footer__logo" src="img/ford-96.png" alt="Logo Ford">
+        <div class="footer__copyright">
+            <p>Copyright © 2025 Ford Motor Company - Todos os direitos reservados</p>
+        </div>
+        <div class="footer__logo">
+            <img src="img/ford-96.png" alt="Logo Ford">
+        </div>
     </footer>
 </body>
 </html>
