@@ -80,32 +80,8 @@ hr {
     margin: 0.5% 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-}
-
-.section__lancamento__2__carros {
-    display: flex;
-    justify-content: center;
-}
-
-.section__lancamento__2__carro {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    justify-content: space-around;
-    margin: 0 1%;
-}
-
-.section__lancamento__2__checkbox {
-    display: flex;
-    justify-content: space-between;
-}
-
-.section__lancamento__2__checkbox img {
-    max-width: 100%;
-    height: 2vh;
-    position: relative;
-    top: 50%;
 }
 
 .section__lancamento__2__info {
@@ -113,7 +89,7 @@ hr {
     margin-left: 1%;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     font-size: 1rem;
 }
 
@@ -135,11 +111,48 @@ hr {
     font-size: 1.5vh;
 }
 
-.section__lancamento__2__carro input {
+table {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+tr {
+    display: flex;
+    justify-content: space-around;
+    gap: 5vw;
+}
+
+tr th {
+    width: 33%;
+    display: flex;
+}
+
+tr td {
+    width: 33%;
+    display: flex;
+}
+
+tr th img {
+    width: 20vw;
+}
+
+td input {
     width: 25px;
     height: 25px;
     flex-shrink: 0;
     flex-grow: 0;
+}
+
+td {
+    display: flex;
+    justify-content: center;
+}
+
+td img {
+    max-width: 100%;
+    height: 2vh;
+    margin-top: 5vh;
 }
     
 .section__contato__1 {
@@ -285,10 +298,12 @@ nav input[type="checkbox"] {
         justify-content: space-between;
         align-items: center;
     }
+
     header img {
         width: 13vw;
         height: auto;
     }
+
     nav {
         width: auto;
         margin: 0;
@@ -297,6 +312,7 @@ nav input[type="checkbox"] {
         justify-content: flex-end;
         align-items: center;
     }
+
     .menu-icon {
         margin: 20% 25% 0 0;
         text-align: left;
@@ -305,6 +321,7 @@ nav input[type="checkbox"] {
         margin-left: auto;
         z-index: 2;
     }
+
     .menu {
         display: none;
         flex-direction: column;
@@ -319,19 +336,17 @@ nav input[type="checkbox"] {
         padding: 13px 20px 13px 7px;
         text-align: left;
     }
+
     .menu a {
         margin-top: 7%;
     }
+
     nav input[type="checkbox"]:checked ~ .menu {
         display: flex;
     }
+
     nav {
         position: relative;
-    }
-
-    .section__lancamento__2__carro {
-        width: 28%;
-        justify-content: space-around;
     }
 
     .section__lancamento__2 button {
@@ -374,15 +389,6 @@ nav input[type="checkbox"] {
 }
 
 @media (max-width: 700px) {
-    .section__lancamento__2__carro {
-        width: 33%;
-    }
-    
-    .section__lancamento__2__carros {
-        flex-direction: column;
-        align-items: center;
-        gap: 2vh;
-    }
 
     .section__lancamento__2 button {
         width: 33%;
